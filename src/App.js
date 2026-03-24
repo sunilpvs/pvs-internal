@@ -27,6 +27,7 @@ function App() {
         <Route path="/careers" element={<Careers />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/under-development" element={<UnderDevelopment />} />
+        
         <Route
           path="/profile"
           element={
@@ -35,7 +36,7 @@ function App() {
             </ProtectedRoute>
           }
         />
-        
+
         <Route
           path="/holiday-calendar"
           element={
