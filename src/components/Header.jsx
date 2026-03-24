@@ -101,12 +101,6 @@ function Header() {
                       <i className="fas fa-arrow-up-right-from-square external-link-icon"></i>
                     </a>
                   )}
-                  {cmsPortalUrl && (
-                    <a href={cmsPortalUrl} target="_blank" rel="noopener noreferrer" className="tools-external-link">
-                      <span>Rice Module (CMS)</span>
-                      <i className="fas fa-arrow-up-right-from-square external-link-icon"></i>
-                    </a>
-                  )}
                 </div>
               </div>
 

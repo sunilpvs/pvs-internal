@@ -1,0 +1,396 @@
+/* ==========================================
+   HOLIDAY CALENDAR PAGE STYLES
+   ========================================== */
+
+.holiday-calendar-page {
+  background-color: #e7eaef;
+  min-height: calc(100vh - 180px);
+}
+
+/* Hero/Header Section */
+.holiday-calendar-hero {
+  background: linear-gradient(135deg, #5b7498 0%, #6d84a4 55%, #1f4478 100%);
+  color: #ffffff;
+  padding: 28px 0 30px;
+}
+
+.holiday-calendar-title {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 2.85rem);
+  font-weight: 700;
+  letter-spacing: 0.2px;
+}
+
+.holiday-calendar-breadcrumb {
+  margin-top: 14px;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.holiday-calendar-breadcrumb-link {
+  color: #ffffff;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.holiday-calendar-breadcrumb-link:hover {
+  color: #f0f6ff;
+  text-decoration: underline;
+}
+
+.holiday-calendar-breadcrumb-separator {
+  margin: 0 6px;
+  opacity: 0.85;
+}
+
+/* Main Content */
+.holiday-calendar-content {
+  padding-top: 2.4rem;
+  padding-bottom: 3rem;
+}
+
+/* Filter Section */
+.holiday-calendar-filters {
+  margin-bottom: 1.9rem;
+}
+
+.holiday-filter-label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #1f3148;
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+}
+
+.holiday-filter-select {
+  width: 320px;
+  max-width: 100%;
+  border: 2px solid #1f824a;
+  border-radius: 9px;
+  min-height: 50px;
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #1f3148;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(31, 130, 74, 0.08);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.holiday-filter-select:hover {
+  border-color: #1a6a38;
+  box-shadow: 0 2px 12px rgba(31, 130, 74, 0.15);
+}
+
+.holiday-filter-select:focus {
+  outline: none;
+  border-color: #1f824a;
+  box-shadow: 0 0 0 3px rgba(31, 130, 74, 0.25);
+  background-color: #fafcfb;
+}
+
+.holiday-filter-select option {
+  color: #1f3148;
+  background-color: #ffffff;
+  padding: 8px;
+}
+
+/* Table Card */
+.holiday-table-card {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 10px 26px rgba(20, 38, 66, 0.08);
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+/* Table Styling */
+.table {
+  margin-bottom: 0;
+}
+
+.holiday-table {
+  margin-bottom: 0;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.holiday-table thead th {
+  border: none;
+  background-color: #1f7a3e;
+  color: #ffffff;
+  text-transform: capitalize;
+  letter-spacing: 0.4px;
+  font-size: 1rem;
+  font-weight: 520;
+  padding: 0.7rem 0.6rem;
+  vertical-align: middle;
+  white-space: normal;
+  text-align: center;
+}
+
+.holiday-table thead th:first-child {
+  min-width: 140px;
+  text-align: left;
+}
+
+.holiday-table thead th:nth-child(2) {
+  min-width: 280px;
+  text-align: left;
+  flex: 1;
+}
+
+.holiday-table thead th:nth-child(n+3) {
+  width: 12%;
+  min-width: 100px;
+}
+
+.holiday-table tbody td {
+  border-top: 1px solid #d6dae0;
+  color: #1a3550;
+  vertical-align: middle;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.7rem 0.6rem;
+}
+
+.holiday-table tbody tr:nth-child(even) td {
+  background-color: #f3f5f8;
+}
+
+.holiday-table tbody tr:hover td {
+  background-color: #f0f4f9;
+  transition: background-color 0.15s ease;
+}
+
+.holiday-table tbody tr:nth-child(even):hover td {
+  background-color: #eef2f8;
+}
+
+/* Check Mark Styling */
+.holiday-check {
+  display: inline-flex;
+  width: 32px;
+  height: 32px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  background-color: #1f824a;
+  color: #ffffff;
+  font-weight: 550;
+  font-size: 1.3rem;
+  line-height: 1;
+  box-shadow: 0 4px 10px rgba(31, 130, 74, 0.28);
+}
+
+.holiday-empty {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+}
+
+/* Note/Info Card */
+.holiday-note-card {
+  margin-top: 2.2rem;
+  padding: 1.45rem 1.4rem;
+  border-left: 5px solid #1f824a;
+  border-radius: 8px;
+  background: #ffffff;
+  box-shadow: 0 8px 20px rgba(20, 38, 66, 0.06);
+}
+
+.holiday-note-card h2 {
+  margin: 0 0 0.8rem;
+  font-size: 2rem;
+  color: #032a5f;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.holiday-note-card p {
+  margin: 0;
+  font-size: 1.08rem;
+  color: #1b3959;
+  line-height: 1.6;
+}
+
+.holiday-note-highlight {
+  margin-top: 0.9rem;
+  background: #eef4f0;
+  border: 1px solid #d2e5d7;
+  border-radius: 7px;
+  padding: 0.85rem 1rem;
+  color: #1a3550;
+  font-size: 1.05rem;
+  line-height: 1.5;
+}
+
+.holiday-note-highlight strong {
+  color: #1f7a3e;
+  font-weight: 600;
+}
+
+/* Center Alignment for Branch Columns */
+.holiday-table tbody td:nth-child(n+3) {
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .holiday-table thead th,
+  .holiday-table tbody td {
+    font-size: 0.95rem;
+    padding: 0.65rem 0.55rem;
+  }
+
+  .holiday-check,
+  .holiday-empty {
+    width: 30px;
+    height: 30px;
+  }
+
+  .holiday-check {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .holiday-calendar-hero {
+    padding: 20px 0 22px;
+  }
+
+  .holiday-calendar-title {
+    font-size: 2rem;
+  }
+
+  .holiday-calendar-content {
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+  }
+
+  .holiday-filter-label {
+    font-size: 0.95rem;
+  }
+
+  .holiday-filter-select {
+    width: 100%;
+    min-height: 48px;
+    font-size: 0.95rem;
+  }
+
+  .holiday-table thead th {
+    font-size: 0.9rem;
+    padding: 0.6rem 0.5rem;
+    letter-spacing: 0.2px;
+  }
+
+  .holiday-table tbody td {
+    font-size: 0.9rem;
+    padding: 0.6rem 0.5rem;
+  }
+
+  .holiday-check,
+  .holiday-empty {
+    width: 30px;
+    height: 30px;
+  }
+
+  .holiday-check {
+    font-size: 1.2rem;
+  }
+
+  .holiday-note-card {
+    padding: 1.2rem 1.1rem;
+  }
+
+  .holiday-note-card h2 {
+    font-size: 1.6rem;
+    margin-bottom: 0.7rem;
+  }
+
+  .holiday-note-card p {
+    font-size: 1rem;
+  }
+
+  .holiday-note-highlight {
+    font-size: 0.95rem;
+    padding: 0.75rem 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .holiday-calendar-hero {
+    padding: 16px 0 18px;
+  }
+
+  .holiday-calendar-title {
+    font-size: 1.6rem;
+  }
+
+  .holiday-calendar-breadcrumb {
+    font-size: 0.9rem;
+  }
+
+  .holiday-calendar-content {
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .holiday-calendar-filters {
+    margin-bottom: 1.3rem;
+  }
+
+  .holiday-filter-label {
+    font-size: 0.85rem;
+  }
+
+  .holiday-filter-select {
+    min-height: 44px;
+    font-size: 0.9rem;
+    padding: 0.5rem 0.8rem;
+  }
+
+  .holiday-table thead th {
+    font-size: 0.75rem;
+    padding: 0.5rem 0.4rem;
+  }
+
+  .holiday-table tbody td {
+    font-size: 0.75rem;
+    padding: 0.5rem 0.4rem;
+  }
+
+  .holiday-check,
+  .holiday-empty {
+    width: 26px;
+    height: 26px;
+  }
+
+  .holiday-check {
+    font-size: 1rem;
+    box-shadow: 0 2px 6px rgba(31, 130, 74, 0.2);
+  }
+
+  .holiday-note-card {
+    margin-top: 1.5rem;
+    padding: 1rem 0.9rem;
+  }
+
+  .holiday-note-card h2 {
+    font-size: 1.3rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .holiday-note-card p {
+    font-size: 0.9rem;
+  }
+
+  .holiday-note-highlight {
+    font-size: 0.85rem;
+    padding: 0.6rem 0.7rem;
+    margin-top: 0.7rem;
+  }
+}
